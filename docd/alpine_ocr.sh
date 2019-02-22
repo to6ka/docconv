@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# Debian alternative build with OCR enabled.
+# Alpine alternative build with OCR enabled.
 
 # Build context must be the GOPATH where docconv and gosseract are contained. 
 
@@ -8,8 +8,8 @@
 # OS than Linux.
 
 export NAME=docd
-export VERSION=debian
-export DOCKERFILE=$GOPATH/src/code.sajari.com/docconv/docd/debian_ocr/Dockerfile
+export VERSION=alpine
+export DOCKERFILE=$GOPATH/src/code.sajari.com/docconv/docd/alpine_ocr/Dockerfile
 
 echo "Building ${NAME} for ${VERSION} with OCR enabled..."
 

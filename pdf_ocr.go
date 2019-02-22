@@ -156,6 +156,7 @@ func ConvertPDF(r io.Reader) (string, map[string]string, error) {
 
 	fullBody := strings.Join([]string{bodyResult.body, imageConvertResult.body}, " ")
 
-	return fullBody, metaResult.meta, nil
+	metaResult.meta["DOCCONV_OCR"] = "yes"
 
+	return fullBody, metaResult.meta, nil
 }
