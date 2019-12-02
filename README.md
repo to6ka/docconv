@@ -1,10 +1,10 @@
 # docconv
-[![GoDoc](https://godoc.org/code.sajari.com/docconv?status.svg)](https://godoc.org/code.sajari.com/docconv)
+[![GoDoc](https://godoc.org/github.com/to6ka/docconv?status.svg)](https://godoc.org/github.com/to6ka/docconv)
 [![Build Status](https://travis-ci.org/sajari/docconv.svg?branch=master)](https://travis-ci.org/sajari/docconv)
 
 A Go wrapper library to convert PDF, DOC, DOCX, XML, HTML, RTF, ODT, Pages documents and images (see optional dependencies below) to plain text.
 
-**Note for returning users:** the Go code path for this pkg been moved to `code.sajari.com/docconv`.  Follow the installation instructions to checkout a version of the code in the correct place.
+**Note for returning users:** the Go code path for this pkg been moved to `github.com/to6ka/docconv`.  Follow the installation instructions to checkout a version of the code in the correct place.
 
 ## Installation
 
@@ -12,7 +12,7 @@ If you haven't setup Go before, you need to first set a `GOPATH` (see [https://g
 
 To fetch and build the code:
 
-    $ go get code.sajari.com/docconv/...
+    $ go get github.com/to6ka/docconv/...
 
 This will also build the command line tool `docd` into `$GOPATH/bin` (assumed to be in your `PATH` already).
 
@@ -28,7 +28,7 @@ Example install of dependencies (not all systems):
 
 To add image support to the `docconv` library you first need to install and build https://github.com/otiai10/gosseract.  Now you can add `-tags ocr` to any `go` command when building/fetching `docconv` to include support for processing images:
 
-    $ go get -tags ocr code.sajari.com/docconv/...
+    $ go get -tags ocr github.com/to6ka/docconv/...
 
 This may complain on OSX, which you can fix by installing tesseract via brew:
 	
@@ -89,7 +89,7 @@ import (
 	"fmt"
 	"log"
 
-	"code.sajari.com/docconv"
+	"github.com/to6ka/docconv"
 )
 
 func main() {
@@ -110,7 +110,7 @@ import (
 	"fmt"
 	"log"
 
-	"code.sajari.com/docconv/client"
+	"github.com/to6ka/docconv/client"
 )
 
 func main() {

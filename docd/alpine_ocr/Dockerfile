@@ -16,9 +16,9 @@ ENV CXX=/usr/bin/g++
 # Build context must be the host GOPATH
 COPY . /goworkspace
 
-WORKDIR /goworkspace/src/code.sajari.com/docconv/docd
+WORKDIR /goworkspace/src/github.com/to6ka/docconv/docd
 
-COPY src/code.sajari.com/docconv/docd/alpine_ocr/dependencies/* /
+COPY src/github.com/to6ka/docconv/docd/alpine_ocr/dependencies/* /
 
 RUN /install.sh
 

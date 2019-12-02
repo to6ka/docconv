@@ -9,7 +9,7 @@
 
 export NAME=docd
 export VERSION=alpine
-export DOCKERFILE=$GOPATH/src/code.sajari.com/docconv/docd/alpine_ocr/Dockerfile
+export DOCKERFILE=$GOPATH/src/github.com/to6ka/docconv/docd/alpine_ocr/Dockerfile
 
 echo "Building ${NAME} for ${VERSION} with OCR enabled..."
 

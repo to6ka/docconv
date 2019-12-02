@@ -9,7 +9,7 @@
 
 export NAME=docd
 export VERSION=debian
-export DOCKERFILE=$GOPATH/src/code.sajari.com/docconv/docd/debian_ocr/Dockerfile
+export DOCKERFILE=$GOPATH/src/github.com/to6ka/docconv/docd/debian_ocr/Dockerfile
 
 echo "Building ${NAME} for ${VERSION} with OCR enabled..."
 

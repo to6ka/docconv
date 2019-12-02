@@ -16,7 +16,7 @@ RUN apt-get install -y golang
 # Build context must be the host GOPATH
 COPY . /goworkspace
 
-WORKDIR /goworkspace/src/code.sajari.com/docconv/docd
+WORKDIR /goworkspace/src/github.com/to6ka/docconv/docd
 
 ENV GOPATH=/goworkspace
 
